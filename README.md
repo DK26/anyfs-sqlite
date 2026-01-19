@@ -3,6 +3,8 @@
 SQLite backend for [AnyFS](https://github.com/DK26/anyfs) - store virtual filesystems in a single database file.
 
 > ⚠️ **Pre-release**: This crate is reserved for future development. Not yet functional.
+>
+> 📖 **Documentation**: See the [AnyFS Design Manual](https://dk26.github.io/anyfs-design-manual/) for full architecture and API documentation.
 
 ## Features
 
@@ -36,9 +38,11 @@ fs.write("/hello.txt", b"Hello, world!")?;
 
 // With encryption (requires `encryption` feature)
 let backend = SqliteBackend::open_encrypted("secure.db", "my-password")?;
-```
+```ocumentation
 
-## Design
+- **[AnyFS Design Manual](https://dk26.github.io/anyfs-design-manual/)** - Full architecture and API documentation
+- **[Backends Guide](https://dk26.github.io/anyfs-design-manual/guides/backends-guide.html)** - Backend implementation details
+- **[ADR-009: Ecosystem Crates](https://dk26.github.io/anyfs-design-manual/architecture/adrs.html#adr-009-simple-backends-in-anyfs-complex-backends-as-ecosystem-crates)** - Why SqliteBackend is a separate crate
 
 See the [AnyFS Design Manual](https://dk26.github.io/anyfs-design-manual/) for architecture details.
 
