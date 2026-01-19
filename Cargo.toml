@@ -1,7 +1,7 @@
 [package]
 name = "anyfs-sqlite"
-version = "0.0.1"
-edition = "2024"
+version = "0.1.0-pre.0"
+edition = "2021"
 rust-version = "1.85"
 description = "SQLite backend for AnyFS with optional encryption support"
 license = "MIT OR Apache-2.0"
