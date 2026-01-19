@@ -13,7 +13,7 @@ categories = ["filesystem", "database"]
 
 [features]
 default = []
-encryption = ["dep:rusqlite/bundled-sqlcipher"]
+encryption = ["rusqlite/bundled-sqlcipher"]
 
 [dependencies]
 anyfs-backend = "0.1"
