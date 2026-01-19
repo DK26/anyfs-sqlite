@@ -16,10 +16,10 @@ default = []
 encryption = ["rusqlite/bundled-sqlcipher"]
 
 [dependencies]
-anyfs-backend = "0.1"
-rusqlite = { version = "0.32", features = ["bundled"] }
+anyfs-backend = "0.1.0-pre.0"
+rusqlite = { version = "0.38.0", features = ["bundled"] }
 thiserror = "2"
 
 [dev-dependencies]
-anyfs = "0.1"
+anyfs = "0.1.0-pre.0"
 tempfile = "3"
