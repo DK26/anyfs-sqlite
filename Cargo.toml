@@ -1,0 +1,25 @@
+[package]
+name = "anyfs-sqlite"
+version = "0.0.1"
+edition = "2024"
+rust-version = "1.85"
+description = "SQLite backend for AnyFS with optional encryption support"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/DK26/anyfs-sqlite"
+documentation = "https://docs.rs/anyfs-sqlite"
+readme = "README.md"
+keywords = ["filesystem", "vfs", "sqlite", "virtual", "backend"]
+categories = ["filesystem", "database"]
+
+[features]
+default = []
+encryption = ["dep:rusqlite/bundled-sqlcipher"]
+
+[dependencies]
+anyfs-backend = "0.1"
+rusqlite = { version = "0.32", features = ["bundled"] }
+thiserror = "2"
+
+[dev-dependencies]
+anyfs = "0.1"
+tempfile = "3"
